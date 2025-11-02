@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Quality Education</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="contact.html">
+  <link rel="stylesheet" href="index.html">
+</head>
+<body class="text-center">
+  <header>
+    <nav>
+      <div class="text-center lead">
+        <img src="images/logo.webp" class="img-fluid" alt="Logo">
+        <h1 class="display-5">Quality Education</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2 class="display-5">About Quality Education</h2>
+    <p>Quality Education aims to bridge gaps in learning by providing access to inclusive education tools, training, and digital resources that empower both teachers and learners globally.</p>
+  </section>
+
+  
+    <h2 class="display-5">Education in Action</h2>
+    <section class="row">
+    <div class="col-lg-4 md-6 sm-12">
+      <div class="card" >
+<img src="images/students.webp" class="img-fluid" alt="Students">
+      </div>
+    </div>
+      <div class="col-lg-4 md-6 sm-12">
+        <div class="card">
+<img src="images/books.webp" class="img-fluid" alt="Books">
+        </div>
+      </div>
+      <div class="col-lg-4 md-6 sm-12">
+        <div class= "card">
+          <img src="images/class.webp" class="img-fluid" alt="Classroom">
+        </div>
+      </div>
+      
+     </section>
+     
+     <section class="row">
+      <div class="col-lg-4 md-6 sm-12">
+        <div class="card">
+<img src="images/online.webp" class="img-fluid" alt="Online Learning">
+        </div>
+      </div>
+     <div class="col-lg-4 md-6 sm-12">
+      <div class="card">
+<img src="images/teacher.webp" class="img-fluid" alt="Teacher">
+      </div>
+     </div>
+      <div class="col-lg-4 md-6 sm-12">
+        <div class="card">
+ <img src="images/laptop.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+     
+    
+    </section>
+  
+
+  <footer>
+    <p>© 2025 Quality Education | Together for a brighter future</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
